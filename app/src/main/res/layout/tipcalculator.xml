@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="20dp"
+android:background="@color/colorPrimary"
+android:gravity="center_horizontal"
+android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Total Bill"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/totalTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light"
+        android:hint="ex: 100.00"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/txtTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Tip Percentage: 0%"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBarTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Number of People (Not Including Yourself)"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/peopleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light"
+        android:hint="ex: 2"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@android:color/background_dark"
+        android:singleLine="false"
+        android:text="Calculate"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="right"
+        android:paddingTop="100dp"
+        android:text="Total Bill:\nTip Amount:\nTotal w/Tip:\nSplit:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
